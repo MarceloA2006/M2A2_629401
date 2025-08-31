@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Jugador</title>
+</head>
+<body>
+  <form action="procesar.php" method="post">
+    <table border="1" cellpadding="5">
+      <tr>
+        <td><label for="nombre">Nombre del jugador:</label></td>
+        <td><input type="text" name="nombre" minlength="3" maxlength="15" required></td>
+      </tr>
+      <tr>
+        <td><label for="correo">Correo:</label></td>
+        <td><input type="email" name="correo" required></td>
+      </tr>
+      <tr>
+        <td><label for="Edad">Edad:</label></td>
+        <td><input type="number" name="edad" min="12" max="40" required></td>
+      </tr>
+      <tr>
+        
+        <td><label for="Nickname">Nickname:</label></td>
+        <td><input type="text" name="nickname" pattern="[a-zA-Z0-9]+"></td>
+        
+        
+      </tr>
+     <tr>
+  <td><label for="Categoria">Categoria:</label></td>
+  <td>
+    <input type="radio" name="Categoria" value="principiante">
+    <label for="principiante">Principiante</label>
+    <input type="radio" name="Categoria" value="intermedio">
+    <label for="intermedio">Intermedio</label>
+    <input type="radio" name="Categoria" value="Experto">
+    <label for="Experto">Experto</label>
+    </td>
+    </tr>
+    <tr>
+        <td><label for="Juegos">Juegos Favoritos:</label></td>
+        <td>
+             <input type="checkbox" id="FIFA">
+            <label for="FIFA">FIFA</label>
+            <input type="checkbox" id="LOL">
+            <label for="LOL">LoL</label>
+            <input type="checkbox" id="Minecraft">
+            <label for="Minecraft">Minecraft</label>
+
+        </td>
+       
+    </tr>
+    <tr>
+         
+            <td><label for="Fecha">Fecha Inscripcion:</label></td>
+            <td> <input type="date"></td>
+        
+    </tr>
+    <th>
+        <td><input type="submit" value="Enviar"> <input type="reset" value="Restablecer"></td>
+        
+    </th>
+    </table>
+    
+    
+</body>
+</html>
